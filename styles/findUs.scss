@@ -1,0 +1,40 @@
+@import 'common';
+
+
+.findUs {
+    h1 {
+        margin-bottom: $section-title-margin-small;
+    }
+
+    .findUsInfoWrapper {
+        padding: 0 $section-title-margin-large $section-title-margin-large;
+        background-color: $bg-color-dark;
+        color: $bg-color-light;
+        @include flex-r-c-sb(flex-start, center);
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        div {
+            margin-right: 50px;
+            margin-top: 50px;
+        }
+
+        ul {
+            li {
+                line-height: 30px;
+            }
+        }
+    }
+}

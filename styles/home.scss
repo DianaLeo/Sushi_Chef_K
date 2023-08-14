@@ -1,0 +1,59 @@
+@import 'common';
+
+
+.brand {
+    padding-top: 30px;
+    @include w-h-bgcolor($h: 130px, $bgColor: $bg-color-dark);
+    @include flex-r-c-sb();
+
+    img:first-child {
+        width: 300px;
+    }
+
+    img:last-child {
+        width: 100px;
+    }
+}
+
+.home {
+    position: relative;
+
+    .textContainer {
+        color: white;
+        position: absolute;
+        top: 20%;
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            text-shadow: 1px 2px 5px black;
+            font-family: 'Abril Fatface';
+            font-size: 5rem;
+
+            :first-child {
+                font-weight: 100;
+                font-family: 'Dancing Script';
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+.homePictureContainer {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($bg-color-dark 1%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, $bg-color-light 99%);
+    }
+}
