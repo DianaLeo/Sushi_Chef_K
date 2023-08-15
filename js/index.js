@@ -1,5 +1,3 @@
-
-
 const navMobileBtn = document.querySelector('.navMobileBtn');
 const navMobileUl = document.querySelector('.navMobile ul');
 const navMobileBgDim = document.querySelector('.navMobileBgDim');

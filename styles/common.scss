@@ -16,3 +16,9 @@ $section-title-margin-small: 40px;
     justify-content: $j-c;
 }
 
+@mixin position-c-c {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    translate: -50% -50%;
+}

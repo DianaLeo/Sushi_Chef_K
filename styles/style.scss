@@ -95,7 +95,9 @@ footer {
     .nav ul {
         width: 90%;
     }
-
+    .gridContainer {
+        grid-template-columns: auto auto auto;
+    }
     .menuContainer {
         padding: 0;
 
@@ -117,8 +119,17 @@ footer {
         }
     }
 
-    .aboutUs h3 {
-        padding: 0 30px;
+    .aboutUs {
+        h3 {
+            padding: 0 30px;
+        }
+
+    }
+
+    .aboutUsImgCover {
+        background-color: red;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 
     .findUs .findUsInfoWrapper {
@@ -166,6 +177,7 @@ footer {
 
     .brand {
         height: 180px;
+
         img:first-child {
             width: 60%;
         }
