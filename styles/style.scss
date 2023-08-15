@@ -40,6 +40,7 @@ ul {
 }
 
 header {
+    position: relative;
     z-index: 10;
     padding: 0 10px;
     @include w-h-bgcolor($h: 35px);

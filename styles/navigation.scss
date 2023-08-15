@@ -65,11 +65,14 @@
 .navMobile {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -200px;
     z-index: 999;
     display: none;
 
     .navMobileBtn {
+        position: relative;
+        top:0;
+        left:100%;
         @include w-h-bgcolor(50px, 50px, $bg-color-light);
         outline: none;
         border: none;
@@ -90,19 +93,9 @@
         padding-top: 30px;
         line-height: 2.5rem;
         @include w-h-bgcolor(200px, 100vh, $bg-color-light);
-        transform: translateX(-100%);
+        // transform: translateX(-100%);
         transition: ease 0.4s;
         position: relative;
-
-        &:after {
-            content: "";
-            display: inline-block;
-            @include w-h-bgcolor(100vw, 100vh, transparent);
-            position: absolute;
-            top: 0;
-            left: 100%;
-            transition: 0.4s;
-        }
 
         li {
             a {
@@ -133,10 +126,23 @@
     }
 
     ul.open {
-        transform: translateX(0);
-        &:after {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+        transform: translateX(100%);
+        // &:after {
+        //     background-color: rgba(0, 0, 0, 0.5);
+        // }
     }
+}
 
+.navMobileBgDim {
+    @include w-h-bgcolor(100vw, 100vh, rgba(0,0,0,0.5));
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    display: none;
+    transition: 0.4s;
+}
+
+.navMobileBgDim.open{
+    display: block;
 }
