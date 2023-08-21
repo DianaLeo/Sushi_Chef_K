@@ -1,7 +1,8 @@
 @import 'common';
 
 .aboutUs {
-    padding:0 20px;
+    padding: 0 20px;
+
     h3 {
         text-align: center;
         margin: $section-title-margin-small 0;
@@ -21,23 +22,29 @@
 }
 
 .aboutUsInfoContainer {
-    gap:20px;
+    gap: 20px;
+
     li {
         position: relative;
         @include flex-r-c-sb();
+
+        img {
+            border-radius: 3px;
+        }
 
         .aboutUsImgCover {
             position: absolute;
             top: 0;
             left: 0;
-            @include w-h-bgcolor($bgColor:rgba(0, 0, 0, 0.5));
-            color:$bg-color-light;
+            @include w-h-bgcolor($bgColor: rgba(0, 0, 0, 0.5));
+            color: $bg-color-light;
             font-weight: bold;
             text-overflow: clip;
             font-size: 1.5rem;
             text-align: center;
             line-height: 3rem;
-            padding:20px;
+            padding: 20px;
+            border-radius: 3px;
         }
 
         // &:after {

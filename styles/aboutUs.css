@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+}
+
 .aboutUs {
   padding: 0 20px;
 }
@@ -30,6 +34,10 @@
   justify-content: center;
 }
 
+.aboutUsInfoContainer li img {
+  border-radius: 3px;
+}
+
 .aboutUsInfoContainer li .aboutUsImgCover {
   position: absolute;
   top: 0;
@@ -44,4 +52,5 @@
   text-align: center;
   line-height: 3rem;
   padding: 20px;
+  border-radius: 3px;
 }

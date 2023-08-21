@@ -1,4 +1,11 @@
 @import 'common';
+@import 'home';
+@import 'navigation';
+@import 'menu';
+@import 'testimonials';
+@import 'aboutUs';
+@import 'findUs';
+
 
 
 * {
@@ -16,9 +23,7 @@ body {
     position: relative;
 }
 
-ul {
-    list-style: none;
-}
+
 
 .sectionTitle {
     height: $section-title-height;
@@ -76,12 +81,7 @@ header {
     }
 }
 
-@import 'home';
-@import 'navigation';
-@import 'menu';
-@import 'testimonials';
-@import 'aboutUs';
-@import 'findUs';
+
 
 footer {
     height: 30px;
@@ -95,9 +95,26 @@ footer {
     .nav ul {
         width: 90%;
     }
+
+    .home {
+        .textContainer {
+            font-size: 8rem;
+            line-height: 8rem;
+
+            p:last-child {
+                top: -4rem;
+            }
+
+            p:first-child.horizontalMove {
+                left: -50vw;
+            }
+        }
+    }
+
     .gridContainer {
         grid-template-columns: auto auto auto;
     }
+
     .menuContainer {
         padding: 0;
 
@@ -148,8 +165,9 @@ footer {
 @media (max-width:600px) {
     header {
         justify-content: flex-end;
-        height: 50px;
+        height: 3rem;
         position: fixed;
+        top: 0;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
 
@@ -160,11 +178,72 @@ footer {
     }
 
     .nav {
-        display: none;
-    }
+        @include w-h-bgcolor(100vw, 100vh, $bg-color-light);
+        position: fixed;
+        top: 0;
+        left: -100vw;
 
-    .navMobile {
-        display: block;
+        .navMobileBtn {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            @include w-h-bgcolor(3rem, 3rem, $bg-color-light);
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .navMobileBtn:active {
+            @include w-h-bgcolor(2.9rem, 2.9rem, lightcoral);
+        }
+
+        ul {
+            position: fixed;
+            top: 3rem;
+            @include w-h-bgcolor($bgColor: $bg-color-light);
+            padding-top: 30px;
+            line-height: 3rem;
+            transition: ease 0.4s;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            li {
+                width: 100%;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    color: $bg-color-dark;
+                    font-size: 1.3rem;
+                }
+
+                a:hover {
+                    color: $bg-color-light;
+                    background-color: lightcoral;
+                }
+
+                a:active {
+                    color: $bg-color-dark;
+                    background-color: rgb(239, 200, 200);
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                color: $bg-color-dark;
+                font-size: 1.3rem;
+                height: 3rem;
+            }
+        }
+
+        ul.open {
+            transform: translateX(100%);
+        }
+
     }
 
     .sectionTitle {
@@ -192,30 +271,87 @@ footer {
         img {
             content: url('../assets/images/home_page_600px.png');
         }
+
+        .textContainer {
+            p:first-child.horizontalMove {
+                left: -100vw;
+            }
+        }
+    }
+
+    .menuIntroContainer {
+        li {
+            .menuIntroImgCover {
+                border: 1px solid $bg-color-light;
+                height: 100%;
+
+                .whiteFrame {
+                    border-radius: 10px;
+                    opacity: 1;
+                    border: 2px solid $bg-color-light;
+                    color: $bg-color-light;
+                    @include flex-r-c-sb($j-c: space-around);
+                }
+
+                span {
+                    position: static;
+                    transform: translateX(0);
+                }
+            }
+        }
     }
 
     .menuContainer {
         padding: 0 20px;
-        justify-content: space-evenly;
+        flex-direction: column;
 
         .menuPicturesWrapper {
-            width: 30%;
-            grid-template-columns: auto;
+            width: 100%;
+            grid-template-columns: auto auto auto auto;
+            gap:5px;
         }
 
         .menuCardWrapper {
-            width: 60%;
+            width: 100%;
         }
 
         .menuCard {
+            margin: 0 20px;
             padding: 20px;
+            top: -10px;
             left: 0;
         }
+    }
+    #menuHandrollContainer2,#menuRicebowlContainer,#menuHotfoodContainer{
+        flex-direction: column-reverse;
     }
 
     .testimonials {
         .pictureContainer img {
             height: 500px;
+        }
+
+        .testimonialCard {
+            width: 250px;
+            height: 300px;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1rem;
+
+            p:nth-child(2) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            p:last-child {
+                font-size: 1rem;
+                line-height: 1rem;
+                &:before{
+                    height: 1rem;
+                    width: 1rem;
+                }
+            }
+            
         }
     }
 }

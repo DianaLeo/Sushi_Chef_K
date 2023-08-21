@@ -1,7 +1,8 @@
 const testimonialCards = document.querySelectorAll('.testimonialCard');
 
 const tCardLength = testimonialCards.length;
-const tCardWidth = 370;
+const tCardWidth = testimonialCards[0].offsetWidth+20;
+
 let currentCardID = Math.ceil(tCardLength / 2);
 
 testimonialCards.forEach((card) => {

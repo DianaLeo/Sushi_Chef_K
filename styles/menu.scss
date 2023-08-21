@@ -1,16 +1,16 @@
 @import 'common';
 
-
-.menu {
-
-    p {
-        font-family: 'Dancing Script';
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: $section-title-margin-small;
-    }
-
+@mixin menuSubtitleFont {
+    font-family: 'Dancing Script';
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: $section-title-margin-small;
 }
+
+.menu>p {
+    @include menuSubtitleFont();
+}
+
 
 .menuIntroContainer {
     li {
@@ -145,7 +145,12 @@
         text-align: center;
     }
 
-    p {
+    h3 {
+        text-align: center;
+    }
+
+    >p {
+        @include menuSubtitleFont();
         margin: 0;
     }
 
@@ -153,7 +158,7 @@
         margin-top: 10px;
         @include flex-r-c-sb($j-c: space-between);
 
-        span:first-child {
+        p:first-child {
             font-weight: bold;
         }
     }

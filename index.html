@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo Black" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -37,16 +38,6 @@
         <img alt="Brand logo" src="./assets/images/brand_logo.png">
     </div>
     <nav class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#aboutUs">About Us</a></li>
-            <li><a href="#findUs">Find Us</a></li>
-            <button class="reservationBtn">Reservation</button>
-        </ul>
-    </nav>
-    <nav class="navMobile">
         <button class="navMobileBtn"><i class="fas fa-bars"></i></button>
         <ul>
             <li><a href="#">Home</a></li>
@@ -56,8 +47,21 @@
             <li><a href="#findUs">Find Us</a></li>
             <button class="reservationBtn">Reservation</button>
         </ul>
+        <div class="reservation">
+
+        </div>
     </nav>
-    <div class="navMobileBgDim"></div>
+    <!-- <nav class="navMobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#findUs">Find Us</a></li>
+            <button class="reservationBtn">Reservation</button>
+        </ul>
+    </nav> -->
+    <!-- <div class="navMobileBgDim"></div> -->
 
     <main>
         <section class="home">
@@ -65,8 +69,8 @@
                 <img alt="home picture" src="./assets/images/home_page.jpg">
             </div>
             <div class="textContainer">
-                <!-- <h1>Welcome to</h1>
-                <h1>Sushi Chef K</h1> -->
+                <p>WELCOME TO</p>
+                <p>SUSHI CHEF K</p>
             </div>
         </section>
         <section id="menu" class="menu">
@@ -75,11 +79,22 @@
             <ul class="menuIntroContainer gridContainer">
                 <li>
                     <a href="#menuHandrollContainer">
-                        <img src="./assets/images/menu_roll.png" alt="hand rolls">
+                        <img src="./assets/images/menu_roll.png" alt="white_rice_rolls">
                         <div class="menuIntroImgCover">
                             <div class="whiteFrame">
-                                <span>HAND ROLL</span>
-                                <span>Start from $3</span>
+                                <span>WHITE RICE ROLL</span>
+                                <span>Start from $3.9</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#menuHandrollContainer2">
+                        <img src="./assets/images/menu_roll.png" alt="brown_rice_rolls">
+                        <div class="menuIntroImgCover">
+                            <div class="whiteFrame">
+                                <span>BROWN RICE ROLL</span>
+                                <span>Start from $3.9</span>
                             </div>
                         </div>
                     </a>
@@ -90,29 +105,18 @@
                         <div class="menuIntroImgCover">
                             <div class="whiteFrame">
                                 <span>NIGIRI</span>
-                                <span>Start from $4</span>
+                                <span>Start from $3.9</span>
                             </div>
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="#menuRicebowlContainer">
-                        <img src="./assets/images/menu_ricebowl.png" alt="rice bowl">
+                        <img src="./assets/images/menu_ricebowl.png" alt="rice_bowl">
                         <div class="menuIntroImgCover">
                             <div class="whiteFrame">
-                                <span>RICE BOWL</span>
-                                <span>Start from $13</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#menuSashimiContainer">
-                        <img src="./assets/images/menu_sashimi.png" alt="sashimi">
-                        <div class="menuIntroImgCover">
-                            <div class="whiteFrame">
-                                <span>SASHIMI</span>
-                                <span>Start from $20</span>
+                                <span>MAIN MEAL</span>
+                                <span>Start from $13.9</span>
                             </div>
                         </div>
                     </a>
@@ -133,8 +137,19 @@
                         <img src="./assets/images/menu_hotfood2.png" alt="hotfood">
                         <div class="menuIntroImgCover">
                             <div class="whiteFrame">
-                                <span>HOT FOOD</span>
-                                <span>Start from $3</span>
+                                <span>SIDE FOOD</span>
+                                <span>Start from $4</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#menuBubbleTeaContainer">
+                        <img src="./assets/images/menu_sashimi.png" alt="bubble_tea">
+                        <div class="menuIntroImgCover">
+                            <div class="whiteFrame">
+                                <span>BUBBLE TEA</span>
+                                <span>Start from $7</span>
                             </div>
                         </div>
                     </a>
@@ -150,50 +165,100 @@
                 <div class="menuCardWrapper">
                     <div class="menuCard">
                         <h1>Sushi Roll</h1>
+                        <h3>White Rice</h3>
                         <p>&#10048</p>
                         <ul>
                             <li>
-                                <span class="discription">Chicken avocado</span>
-                                <span class="price">$3</span>
+                                <p class="discription">Fresh Salmon</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Salmon</span>
-                                <span class="price">$4</span>
+                                <p class="discription">Tuna avocado</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Teriyaki chicken</span>
-                                <span class="price">$3</span>
+                                <p class="discription">Tuna cucumber</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Avocado</span>
-                                <span class="price">$3</span>
+                                <p class="discription">Fresh Vegetable</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">California</span>
-                                <span class="price">$4</span>
+                                <p class="discription">Prawn Avo</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Smoke salmon</span>
-                                <span class="price">$4</span>
+                                <p class="discription">Califomia</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Octopus</span>
-                                <span class="price">$4.5</span>
+                                <p class="discription">Honey pumkiu</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Egg</span>
-                                <span class="price">$3</span>
+                                <p class="discription">Egg</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Crispy chicken</span>
-                                <span class="price">$4</span>
+                                <p class="discription">Teriyaki salmon</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription">Seaweed</span>
-                                <span class="price">$3</span>
+                                <p class="discription">Chicken katsu</p>
+                                <p class="price">$3.9</p>
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="menuContainer" id="menuHandrollContainer2">
+                <div class="menuCardWrapper">
+                    <div class="menuCard">
+                        <h1>Sushi Roll</h1>
+                        <h3>Brown Rice</h3>
+                        <p>&#10048</p>
+                        <ul>
+                            <li>
+                                <p class="discription">Fresh salmon</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Smoke salmon</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Tuna avocado</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Tuna cucumber</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Deep fried Vegetable</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Bulgogi</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Califomia</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Unagi</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menuPicturesWrapper">
+                    <img src="./assets/images/menu_roll.png" alt="">
+                    <img src="./assets/images/menu_roll.png" alt="">
+                    <img src="./assets/images/menu_roll.png" alt="">
+                    <img src="./assets/images/menu_roll.png" alt="">
                 </div>
             </div>
             <div class="menuContainer" id="menuNigiriContainer">
@@ -209,159 +274,131 @@
                         <p>&#10048</p>
                         <ul>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Grilled salmon</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Spicy prawn</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Grilled scallop</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Crab meat</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Deep fried scallop</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Skinny prawn</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Cocktail prawn</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Tempura vegetable</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Grilled spicy salmon</p>
+                                <p class="price">$3.9</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Tamago (Egg)</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Unagi</p>
+                                <p class="price">$3.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Grilled beef</p>
+                                <p class="price">$3.9</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="menuContainer" id="menuRicebowlContainer">
+                <div class="menuCardWrapper">
+                    <div class="menuCard">
+                        <h1>Main Meal</h1>
+                        <p>&#10048</p>
+                        <ul>
+                            <li>
+                                <p class="discription">Teriyaki Salmon Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Teriyaki Chicken Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Bulgogi Beef Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Curry Beef Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Curry Chicken Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Chicken Katsu Don</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Karrage Chicken Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Unagi Don</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Salmon Don</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Octopus Karrage Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Pork Minced Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Honey Chili Chicken Rice</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Udon Noodle</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Naru Ramen</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                            <li>
+                                <p class="discription">Mixed Box</p>
+                                <p class="price">$13.9</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="menuPicturesWrapper">
                     <img src="./assets/images/menu_ricebowl.png" alt="">
                     <img src="./assets/images/menu_ricebowl.png" alt="">
                     <img src="./assets/images/menu_ricebowl.png" alt="">
                     <img src="./assets/images/menu_ricebowl.png" alt="">
-                </div>
-                <div class="menuCardWrapper">
-                    <div class="menuCard">
-                        <h1>Rice Bowl</h1>
-                        <p>&#10048</p>
-                        <ul>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="menuContainer" id="menuSashimiContainer">
-                <div class="menuPicturesWrapper">
-                    <img src="./assets/images/menu_sashimi.png" alt="">
-                    <img src="./assets/images/menu_sashimi.png" alt="">
-                    <img src="./assets/images/menu_sashimi.png" alt="">
-                    <img src="./assets/images/menu_sashimi.png" alt="">
-                </div>
-                <div class="menuCardWrapper">
-                    <div class="menuCard">
-                        <h1>Sashimi</h1>
-                        <p>&#10048</p>
-                        <ul>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="menuContainer" id="menuPlateContainer">
@@ -377,100 +414,177 @@
                         <p>&#10048</p>
                         <ul>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">M: for 8-10 people</p>
+                                <p class="price">$55</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
-                            </li>
-                            <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">L: for 10-12 people</p>
+                                <p class="price">$75</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="menuContainer" id="menuHotfoodContainer">
+                <div class="menuCardWrapper">
+                    <div class="menuCard">
+                        <h1>SIDE Food</h1>
+                        <p>&#10048</p>
+                        <ul>
+                            <li>
+                                <p class="discription">Gyoza ( dumpling)</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Tempura prawn</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Tempura Vegetable</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Sweet Chili Chicken</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Katsu Chicken</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Karage Chicken</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Spring Roll</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Prawn Cake</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Fish Cake</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Octopus Karrage</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Crab Claw</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Sweet Potato</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Edamame</p>
+                                <p class="price"></p>
+                            </li>
+                            <li>
+                                <p class="discription">Soft Shell Crab</p>
+                                <p class="price"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="menuPicturesWrapper">
                     <img src="./assets/images/menu_hotfood.png" alt="">
                     <img src="./assets/images/menu_hotfood.png" alt="">
                     <img src="./assets/images/menu_hotfood.png" alt="">
                     <img src="./assets/images/menu_hotfood.png" alt="">
                 </div>
+            </div>
+            <div class="menuContainer" id="menuBubbleTeaContainer">
+                <div class="menuPicturesWrapper">
+                    <img src="./assets/images/menu_sashimi.png" alt="">
+                    <img src="./assets/images/menu_sashimi.png" alt="">
+                    <img src="./assets/images/menu_sashimi.png" alt="">
+                    <img src="./assets/images/menu_sashimi.png" alt="">
+                </div>
                 <div class="menuCardWrapper">
                     <div class="menuCard">
-                        <h1>Hot Food</h1>
+                        <h1>BUBBLE TEA</h1>
                         <p>&#10048</p>
                         <ul>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Lychee</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Mango</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Peach</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Green Apple</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Passionfruit</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Lemon</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Strawberry</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Plum</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Yogurt</p>
+                                <p class="price">$7</p>
                             </li>
                             <li>
-                                <span class="discription"></span>
-                                <span class="price"></span>
+                                <p class="discription">Chocolate</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Coffee</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Matcha</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Taro</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Coconut</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Honeydew</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="discription">Caramel</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <p>Extra Topping</p>
+                            <li>
+                                <p class="discription">Pearl</p>
+                                <p class="price">$1</p>
+                            </li>
+                            <li>
+                                <p class="discription">Jelly</p>
+                                <p class="price">$1</p>
+                            </li>
+                            <li>
+                                <p class="discription">Popping Ball</p>
+                                <p class="price">$1</p>
                             </li>
                         </ul>
                     </div>
@@ -480,7 +594,7 @@
         <section id="testimonials" class="testimonials">
             <h1 class="sectionTitle">TESTIMONIALS</h1>
             <div class="tesimonialsWrapper">
-                <div class="pictureContainer">
+                <div class="pictureContainer homePictureContainer">
                     <img src="./assets/images/testimonials2.png" alt="testimonials">
                 </div>
                 <ul class="testimonialsUl">
@@ -596,9 +710,11 @@
         <p>@MarcoZheng.pty.ltd</p>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
     <script src="./js/testimonials.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/aboutUs.js"></script>
+    <script src="./js/navigation.js"></script>
 </body>
 
 </html>
