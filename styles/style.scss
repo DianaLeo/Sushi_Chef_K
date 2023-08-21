@@ -155,7 +155,6 @@ footer {
     }
 
     .aboutUsImgCover {
-        background-color: red;
         font-size: 1rem;
         line-height: 1rem;
     }
@@ -185,6 +184,11 @@ footer {
         li:first-child span:last-child,
         li:last-child span {
             display: none;
+        }
+
+        svg,i{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
         }
     }
 
@@ -319,6 +323,7 @@ footer {
     .testimonials {
         .pictureContainer img {
             height: 500px;
+            object-fit: cover;
         }
 
         .testimonialCard {
@@ -342,6 +347,13 @@ footer {
                 }
             }
             
+        }
+    }
+
+    .aboutUs{
+        .aboutUsImgCover{
+            font-size: 0.8rem;
+            line-height: 0.8rem;
         }
     }
 }

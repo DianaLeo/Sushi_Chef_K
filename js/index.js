@@ -9,10 +9,10 @@ navUl.addEventListener('click', navClickHandler);
 function navClickHandler(){
     navUl.classList.toggle('open');
     //navMobileBgDim.classList.toggle('open');
-    if (document.body.style.overflow == 'hidden') {
-        document.body.style.overflow = 'scroll'
-    } else {
-        document.body.style.overflow = 'hidden';
-    }
+    // if (document.body.style.overflow == 'hidden') {
+    //     document.body.style.overflow = 'scroll'
+    // } else {
+    //     document.body.style.overflow = 'hidden';
+    // }
 }
 

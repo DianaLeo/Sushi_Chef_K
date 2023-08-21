@@ -637,7 +637,6 @@ footer {
     padding: 0 30px;
   }
   .aboutUsImgCover {
-    background-color: red;
     font-size: 1rem;
     line-height: 1rem;
   }
@@ -662,6 +661,10 @@ footer {
   header li:first-child span:last-child,
   header li:last-child span {
     display: none;
+  }
+  header svg, header i {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .nav {
     background-color: #fafafa;
@@ -773,6 +776,7 @@ footer {
   }
   .testimonials .pictureContainer img {
     height: 500px;
+    object-fit: cover;
   }
   .testimonials .testimonialCard {
     width: 250px;
@@ -792,5 +796,9 @@ footer {
   .testimonials .testimonialCard p:last-child:before {
     height: 1rem;
     width: 1rem;
+  }
+  .aboutUs .aboutUsImgCover {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
   }
 }
