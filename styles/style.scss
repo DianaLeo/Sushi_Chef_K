@@ -37,7 +37,7 @@ body {
     grid-template-columns: auto auto auto auto;
 
     li img {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
     }
 }

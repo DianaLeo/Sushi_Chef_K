@@ -51,7 +51,7 @@ ul {
 }
 
 .testimonialCard p:first-child {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: yellow;
   text-shadow: 1px 1px 3px rgba(119, 100, 36, 0.5);
 }

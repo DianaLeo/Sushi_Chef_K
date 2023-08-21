@@ -34,6 +34,10 @@
         ul {
             li {
                 line-height: 30px;
+                a{
+                    text-decoration: none;
+                    color: $bg-color-light;
+                }
             }
         }
     }
