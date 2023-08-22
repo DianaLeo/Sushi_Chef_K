@@ -131,7 +131,8 @@ footer {
                 @include flex-r-c-sb;
 
                 .whiteFrame {
-                    position: static;//for mobile end
+                    top:0;
+                    left:0;
                     translate: 0 0;//for mobile end
                     border-radius: 10px;
                     opacity: 1;
