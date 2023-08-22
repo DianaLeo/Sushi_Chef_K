@@ -650,11 +650,6 @@ footer {
     justify-content: center;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
-    width: 70px;
-    height: 70px;
-    top: 0;
-    left: 0;
-    translate: 0 0;
     border-radius: 10px;
     opacity: 1;
     border: 2px solid #fafafa;
@@ -664,7 +659,6 @@ footer {
   }
   .menuIntroContainer li .menuIntroImgCover span {
     position: static;
-    left: 0;
     transform: translateX(0);
   }
   .menuIntroContainer li .menuIntroImgCover span:first-child {
