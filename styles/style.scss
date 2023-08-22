@@ -127,6 +127,7 @@ footer {
             .menuIntroImgCover {
                 border: 1px solid $bg-color-light;
                 height: 100%;
+                @include flex-r-c-sb;
 
                 .whiteFrame {
                     border-radius: 10px;
@@ -137,17 +138,17 @@ footer {
 
                 span {
                     position: static;
-                    left:0;
+                    left:0;//For PC, don't have to change it back to 0, but for mobile, it is nessesary
                     transform: translateX(0);
                 }
                 span:first-child {
-                    font-size: 2rem;
-                    line-height: 2rem;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
                 }
     
                 span:last-child {
-                    font-size: 1.2rem;
-                    line-height: 1.2rem;
+                    font-size: 1rem;
+                    line-height: 1rem;
                 }
             }
         }
@@ -166,7 +167,7 @@ footer {
     .testimonials {
         h1 {
             margin-top: $section-title-margin-small;
-            margin-bottom: 0;
+            margin-bottom: 20px;
         }
 
         .pictureContainer img {
@@ -183,8 +184,8 @@ footer {
     }
 
     .aboutUsImgCover {
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
     }
 
     .findUs .findUsInfoWrapper {
@@ -353,7 +354,7 @@ footer {
 
         .testimonialCard {
             width: 250px;
-            height: 300px;
+            height: 390px;
             padding: 20px;
             font-size: 1rem;
             line-height: 1rem;
@@ -363,18 +364,13 @@ footer {
             }
 
             p:nth-child(2) {
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-size: 0.9rem;
+                line-height: 1.4rem;
             }
 
             p:last-child {
                 font-size: 1rem;
                 line-height: 1.2rem;
-
-                &:before {
-                    height: 1rem;
-                    width: 1rem;
-                }
             }
 
         }
@@ -384,7 +380,7 @@ footer {
         li {
             .aboutUsImgCover {
                 font-size: 1rem;
-                line-height: 1rem;
+                line-height: 1.5rem;
             }
         }
 

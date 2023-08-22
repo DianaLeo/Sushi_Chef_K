@@ -360,6 +360,7 @@ ul {
 }
 
 .testimonials .tesimonialsWrapper .buttonWrapper button {
+  padding: 0;
   border: none;
   border-radius: 50%;
   background-color: #fafafa;
@@ -386,7 +387,6 @@ ul {
 
 .testimonials ul li {
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   transition: 0.4s;
 }
@@ -642,6 +642,9 @@ footer {
   .menuIntroContainer li .menuIntroImgCover {
     border: 1px solid #fafafa;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
     border-radius: 10px;
@@ -657,12 +660,12 @@ footer {
     transform: translateX(0);
   }
   .menuIntroContainer li .menuIntroImgCover span:first-child {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .menuIntroContainer li .menuIntroImgCover span:last-child {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
   .menuContainer {
     padding: 0;
@@ -672,7 +675,7 @@ footer {
   }
   .testimonials h1 {
     margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .testimonials .pictureContainer img {
     object-fit: cover;
@@ -682,8 +685,8 @@ footer {
     padding: 0 30px;
   }
   .aboutUsImgCover {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
   }
   .findUs .findUsInfoWrapper {
     flex-direction: column;
@@ -824,7 +827,7 @@ footer {
   }
   .testimonials .testimonialCard {
     width: 250px;
-    height: 300px;
+    height: 390px;
     padding: 20px;
     font-size: 1rem;
     line-height: 1rem;
@@ -833,20 +836,16 @@ footer {
     font-size: 1.2rem;
   }
   .testimonials .testimonialCard p:nth-child(2) {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
   }
   .testimonials .testimonialCard p:last-child {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  .testimonials .testimonialCard p:last-child:before {
-    height: 1rem;
-    width: 1rem;
-  }
   .aboutUsInfoContainer li .aboutUsImgCover {
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
   .findUs .findUsInfoWrapper {
     padding: 0 20px 70px;

@@ -24,6 +24,7 @@
             z-index: 30;
 
             button {
+                padding: 0;
                 border: none;
                 border-radius: 50%;
                 @include w-h-bgcolor(50px,50px,$bg-color-light);

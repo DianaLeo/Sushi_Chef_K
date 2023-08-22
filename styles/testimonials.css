@@ -28,6 +28,7 @@ ul {
 }
 
 .testimonials .tesimonialsWrapper .buttonWrapper button {
+  padding: 0;
   border: none;
   border-radius: 50%;
   background-color: #fafafa;
