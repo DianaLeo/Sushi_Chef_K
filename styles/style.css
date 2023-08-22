@@ -352,6 +352,7 @@ ul {
   width: 100%;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -361,11 +362,13 @@ ul {
 .testimonials .tesimonialsWrapper .buttonWrapper button {
   border: none;
   border-radius: 50%;
-  width: 50px;
+  background-color: #fafafa;
   height: 50px;
+  width: 50px;
   text-align: center;
   line-height: 50px;
   font-size: 1.9rem;
+  color: #1c1d1e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -374,8 +377,6 @@ ul {
 }
 
 .testimonials ul {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -386,7 +387,6 @@ ul {
 .testimonials ul li {
   position: absolute;
   top: 50%;
-  left: 100px;
   transform: translateY(-50%);
   transition: 0.4s;
 }
@@ -425,16 +425,6 @@ ul {
   font-family: 'Dancing Script', sans-serif;
   display: flex;
   justify-content: center;
-}
-
-.testimonialCard p:last-child:before {
-  content: "";
-  background-color: lightcoral;
-  height: 10px;
-  width: 10px;
-  margin-right: 10px;
-  border-radius: 50%;
-  flex: 0 0 auto;
 }
 
 ul {
@@ -531,7 +521,7 @@ ul {
 }
 
 .findUs .findUsInfoWrapper ul li {
-  line-height: 30px;
+  line-height: 1rem;
 }
 
 .findUs .findUsInfoWrapper ul li a {
@@ -657,14 +647,22 @@ footer {
     border-radius: 10px;
     opacity: 1;
     border: 2px solid #fafafa;
-    color: #fafafa;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   .menuIntroContainer li .menuIntroImgCover span {
     position: static;
+    left: 0;
     transform: translateX(0);
+  }
+  .menuIntroContainer li .menuIntroImgCover span:first-child {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .menuIntroContainer li .menuIntroImgCover span:last-child {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
   }
   .menuContainer {
     padding: 0;
@@ -677,7 +675,8 @@ footer {
     margin-bottom: 0;
   }
   .testimonials .pictureContainer img {
-    height: 500px;
+    object-fit: cover;
+    height: 550px;
   }
   .aboutUs h3 {
     padding: 0 30px;
@@ -823,10 +822,6 @@ footer {
   #menuHotfoodContainer {
     flex-direction: column-reverse;
   }
-  .testimonials .pictureContainer img {
-    height: 550px;
-    object-fit: cover;
-  }
   .testimonials .testimonialCard {
     width: 250px;
     height: 300px;
@@ -853,7 +848,27 @@ footer {
     font-size: 1rem;
     line-height: 1rem;
   }
-  .findUsInfoWrapper {
+  .findUs .findUsInfoWrapper {
+    padding: 0 20px 70px;
     align-items: center;
+  }
+  .findUs .findUsInfoWrapper h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .findUs .findUsInfoWrapper h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0px;
+  }
+  .findUs .findUsInfoWrapper div,
+  .findUs .findUsInfoWrapper li,
+  .findUs .findUsInfoWrapper a,
+  .findUs .findUsInfoWrapper span {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .findUs .findUsInfoWrapper div {
+    margin-right: 0;
   }
 }

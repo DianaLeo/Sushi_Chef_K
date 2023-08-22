@@ -10,8 +10,6 @@
         margin-bottom: $section-title-margin-small;
     }
 
-
-
     .tesimonialsWrapper {
         position: relative;
 
@@ -19,6 +17,7 @@
             width: 100%;
             position: absolute;
             top: 50%;
+            transform: translateY(-50%);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -27,11 +26,11 @@
             button {
                 border: none;
                 border-radius: 50%;
-                width: 50px;
-                height: 50px;
+                @include w-h-bgcolor(50px,50px,$bg-color-light);
                 text-align: center;
                 line-height: 50px;
                 font-size: 1.9rem;
+                color:$bg-color-dark;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
             }
         }
@@ -39,22 +38,17 @@
 
     .pictureContainer {
         // @extend .homePictureContainer;
-
         &:after {
             background: linear-gradient($bg-color-light 1%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, $bg-color-light 99%);
         }
     }
 
     ul {
-        width: 100%;
-        height: 100%;
         @include position-c-c;
         transition: 0.4s;
 
         li {
-            position: absolute;
-            top: 50%;
-            left: 100px;
+            position: absolute;//By default, top & left for absolute are 50%
             transform: translateY(-50%);
             transition: 0.4s;
         }

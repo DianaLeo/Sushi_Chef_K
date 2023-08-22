@@ -19,7 +19,7 @@ testimonialCards.forEach((card) => {
 
 function moveCards(card) {
     let times = 0.5 + (currentCardID - card.id);
-    card.style.left = `calc(50% - ${tCardWidth * times}px)`;
+    card.style.left = `calc(50% - ${tCardWidth * times}px + 10px)`;
     if (card.id != currentCardID) {
         card.style.opacity = 1 - 0.45 * Math.abs(card.id - currentCardID);
     } else {

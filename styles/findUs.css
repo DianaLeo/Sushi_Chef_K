@@ -35,7 +35,7 @@ ul {
 }
 
 .findUs .findUsInfoWrapper ul li {
-  line-height: 30px;
+  line-height: 1rem;
 }
 
 .findUs .findUsInfoWrapper ul li a {

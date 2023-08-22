@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-.gotoTopBtn{
+.gotoTopBtn {
     text-decoration: none;
     position: fixed;
     right: 0;
@@ -31,7 +31,7 @@ body {
     z-index: 998;
     border: none;
     border-radius: 50%;
-    @include w-h-bgcolor(70px,70px,lightcoral);
+    @include w-h-bgcolor(70px, 70px, lightcoral);
     text-align: center;
     font-size: 1.5rem;
     line-height: 70px;
@@ -99,7 +99,7 @@ footer {
         width: 90%;
     }
 
-    .gotoTopBtn{
+    .gotoTopBtn {
         display: block;
     }
 
@@ -132,13 +132,22 @@ footer {
                     border-radius: 10px;
                     opacity: 1;
                     border: 2px solid $bg-color-light;
-                    color: $bg-color-light;
                     @include flex-r-c-sb($j-c: space-around);
                 }
 
                 span {
                     position: static;
+                    left:0;
                     transform: translateX(0);
+                }
+                span:first-child {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+    
+                span:last-child {
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
                 }
             }
         }
@@ -161,7 +170,8 @@ footer {
         }
 
         .pictureContainer img {
-            height: 500px;
+            object-fit: cover;
+            height: 550px;
         }
     }
 
@@ -340,10 +350,6 @@ footer {
     }
 
     .testimonials {
-        .pictureContainer img {
-            height: 550px;
-            object-fit: cover;
-        }
 
         .testimonialCard {
             width: 250px;
@@ -384,7 +390,31 @@ footer {
 
     }
 
-    .findUsInfoWrapper{
-        align-items: center;
+    .findUs {
+        .findUsInfoWrapper {
+            padding: 0 20px $section-title-margin-large;
+            align-items: center;
+            h1{
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: 1rem;
+                line-height: 1.4rem;
+                margin: 0px;
+            }
+
+            div,
+            li,
+            a,
+            span {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+            }
+
+            div {
+                margin-right: 0;
+            }
+        }
     }
 }
