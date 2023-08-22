@@ -21,6 +21,7 @@ body {
     max-width: 1320px;
     margin: 0 auto;
     position: relative;
+    overflow-x: hidden;
 }
 
 .gotoTopBtn {
@@ -130,6 +131,8 @@ footer {
                 @include flex-r-c-sb;
 
                 .whiteFrame {
+                    position: static;//for mobile end
+                    translate: 0 0;//for mobile end
                     border-radius: 10px;
                     opacity: 1;
                     border: 2px solid $bg-color-light;
@@ -404,8 +407,7 @@ footer {
             li,
             a,
             span {
-                font-size: 0.8rem;
-                line-height: 1.2rem;
+                line-height: 1.5rem;
             }
 
             div {

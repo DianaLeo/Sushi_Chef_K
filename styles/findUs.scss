@@ -33,12 +33,18 @@
 
         ul {
             li {
-                line-height: 1rem;
-                a{
+                a {
                     text-decoration: none;
                     color: $bg-color-light;
                 }
             }
+        }
+
+        div,
+        li,
+        a,
+        span {
+            line-height: 2rem;
         }
     }
 }

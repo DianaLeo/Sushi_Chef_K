@@ -520,13 +520,16 @@ ul {
   margin-top: 50px;
 }
 
-.findUs .findUsInfoWrapper ul li {
-  line-height: 1rem;
-}
-
 .findUs .findUsInfoWrapper ul li a {
   text-decoration: none;
   color: #fafafa;
+}
+
+.findUs .findUsInfoWrapper div,
+.findUs .findUsInfoWrapper li,
+.findUs .findUsInfoWrapper a,
+.findUs .findUsInfoWrapper span {
+  line-height: 2rem;
 }
 
 * {
@@ -542,6 +545,7 @@ body {
   max-width: 1320px;
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .gotoTopBtn {
@@ -647,6 +651,8 @@ footer {
     justify-content: center;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
+    position: static;
+    translate: 0 0;
     border-radius: 10px;
     opacity: 1;
     border: 2px solid #fafafa;
@@ -864,8 +870,7 @@ footer {
   .findUs .findUsInfoWrapper li,
   .findUs .findUsInfoWrapper a,
   .findUs .findUsInfoWrapper span {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
   }
   .findUs .findUsInfoWrapper div {
     margin-right: 0;

@@ -34,11 +34,14 @@ ul {
   margin-top: 50px;
 }
 
-.findUs .findUsInfoWrapper ul li {
-  line-height: 1rem;
-}
-
 .findUs .findUsInfoWrapper ul li a {
   text-decoration: none;
   color: #fafafa;
+}
+
+.findUs .findUsInfoWrapper div,
+.findUs .findUsInfoWrapper li,
+.findUs .findUsInfoWrapper a,
+.findUs .findUsInfoWrapper span {
+  line-height: 2rem;
 }
