@@ -24,20 +24,18 @@ body {
 }
 
 .gotoTopBtn{
+    text-decoration: none;
     position: fixed;
     right: 0;
     bottom: 50px;
     z-index: 998;
-}
-
-.littleRoundBtn {
     border: none;
     border-radius: 50%;
-    @include w-h-bgcolor(70px,70px,$bg-color-light);
+    @include w-h-bgcolor(70px,70px,lightcoral);
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    display: none;
 }
 
 .sectionTitle {
@@ -88,8 +86,6 @@ header {
     }
 }
 
-
-
 footer {
     height: 30px;
     text-align: center;
@@ -101,6 +97,10 @@ footer {
 @media (max-width:1000px) {
     .nav ul {
         width: 90%;
+    }
+
+    .gotoTopBtn{
+        display: block;
     }
 
     .home {
@@ -187,8 +187,6 @@ footer {
         }
     }
 }
-
-
 
 @media (max-width:600px) {
     header {
