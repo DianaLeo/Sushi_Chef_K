@@ -363,6 +363,10 @@ ul {
 }
 
 .testimonials ul li {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
   transition: 0.4s;
 }
 
@@ -587,7 +591,7 @@ footer {
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav ul {
     width: 90%;
   }
@@ -606,7 +610,7 @@ footer {
   }
   .menuIntroContainer li .menuIntroImgCover {
     border: 1px solid #fafafa;
-    height: 50%;
+    height: 100%;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
     border-radius: 10px;
@@ -786,13 +790,16 @@ footer {
     font-size: 1rem;
     line-height: 1rem;
   }
+  .testimonials .testimonialCard p:first-child {
+    font-size: 1.2rem;
+  }
   .testimonials .testimonialCard p:nth-child(2) {
     font-size: 1rem;
     line-height: 1.5rem;
   }
   .testimonials .testimonialCard p:last-child {
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
   }
   .testimonials .testimonialCard p:last-child:before {
     height: 1rem;
