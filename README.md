@@ -4,7 +4,7 @@
 
 This project is a demonstration website for a small business, including home, menu, testimonials, about us and find us pages. 
 
- - I designed the layout and color scheme according to their logo and menu.
+ - The layout and color scheme are designed according to their logo and menu.
 
  - **The responsive design has been made for PC, ipad, and mobile phones.**
 
