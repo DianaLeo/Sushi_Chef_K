@@ -650,6 +650,7 @@ footer {
     justify-content: center;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
+    translate: 0 0;
     border-radius: 10px;
     opacity: 1;
     border: 2px solid #fafafa;
