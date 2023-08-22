@@ -31,10 +31,6 @@ ul {
 }
 
 .testimonials ul li {
-  position: absolute;
-  top: 50%;
-  left: 100px;
-  transform: translateY(-50%);
   transition: 0.4s;
 }
 
