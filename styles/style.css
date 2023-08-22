@@ -348,6 +348,27 @@ ul {
   position: relative;
 }
 
+.testimonials .tesimonialsWrapper .buttonWrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 30;
+}
+
+.testimonials .littleRoundBtn {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1.9rem;
+  font-size: 1.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
 .testimonials .pictureContainer:after {
   background: linear-gradient(#fafafa 1%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, #fafafa 99%);
 }
@@ -533,6 +554,25 @@ body {
   position: relative;
 }
 
+.gotoTopBtn {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  z-index: 998;
+}
+
+.littleRoundBtn {
+  border: none;
+  border-radius: 50%;
+  background-color: #fafafa;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  font-size: 1.9rem;
+  line-height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
 .sectionTitle {
   height: 4rem;
   margin-top: 70px;
@@ -667,7 +707,8 @@ footer {
   header li:last-child span {
     display: none;
   }
-  header svg, header i {
+  header svg,
+  header i {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -738,7 +779,7 @@ footer {
     transform: translateX(100%);
   }
   .sectionTitle {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .gridContainer {
     grid-template-columns: 1fr 1fr;
@@ -776,11 +817,13 @@ footer {
     top: -10px;
     left: 0;
   }
-  #menuHandrollContainer2, #menuRicebowlContainer, #menuHotfoodContainer {
+  #menuHandrollContainer2,
+  #menuRicebowlContainer,
+  #menuHotfoodContainer {
     flex-direction: column-reverse;
   }
   .testimonials .pictureContainer img {
-    height: 500px;
+    height: 550px;
     object-fit: cover;
   }
   .testimonials .testimonialCard {
@@ -805,8 +848,11 @@ footer {
     height: 1rem;
     width: 1rem;
   }
-  .aboutUs .aboutUsImgCover {
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+  .aboutUsInfoContainer li .aboutUsImgCover {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .findUsInfoWrapper {
+    align-items: center;
   }
 }

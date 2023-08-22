@@ -16,6 +16,27 @@ ul {
   position: relative;
 }
 
+.testimonials .tesimonialsWrapper .buttonWrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 30;
+}
+
+.testimonials .littleRoundBtn {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1.9rem;
+  font-size: 1.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
 .testimonials .pictureContainer:after {
   background: linear-gradient(#fafafa 1%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, #fafafa 99%);
 }

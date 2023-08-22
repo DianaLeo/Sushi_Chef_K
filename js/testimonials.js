@@ -1,7 +1,9 @@
 const testimonialCards = document.querySelectorAll('.testimonialCard');
+const btnLeft = document.querySelector('.testimonials .left');
+const btnRight = document.querySelector('.testimonials .right');
 
 const tCardLength = testimonialCards.length;
-const tCardWidth = testimonialCards[0].offsetWidth+20;
+const tCardWidth = testimonialCards[0].offsetWidth + 20;
 
 let currentCardID = Math.ceil(tCardLength / 2);
 
@@ -24,3 +26,20 @@ function moveCards(card) {
         card.style.opacity = 1
     }
 }
+
+btnLeft.addEventListener('click', () => {
+    if (currentCardID > 1) {
+        currentCardID--;
+        testimonialCards.forEach(card => {
+            moveCards(card);
+        })
+    }
+})
+btnRight.addEventListener('click', () => {
+    if (currentCardID < tCardLength) {
+        currentCardID++;
+        testimonialCards.forEach(card => {
+            moveCards(card);
+        })
+    }
+})

@@ -23,6 +23,23 @@ body {
     position: relative;
 }
 
+.gotoTopBtn{
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    z-index: 998;
+}
+
+.littleRoundBtn {
+    border: none;
+    border-radius: 50%;
+    @include w-h-bgcolor(70px,70px,$bg-color-light);
+    text-align: center;
+    font-size: 1.9rem;
+    line-height: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
 .sectionTitle {
     height: $section-title-height;
     margin-top: $section-title-margin-large;
@@ -34,7 +51,7 @@ body {
 .gridContainer {
     list-style: none;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     li img {
         width: 100%;
@@ -126,6 +143,7 @@ footer {
             }
         }
     }
+
     .menuContainer {
         padding: 0;
 
@@ -186,7 +204,8 @@ footer {
             display: none;
         }
 
-        svg,i{
+        svg,
+        i {
             font-size: 1.5rem;
             line-height: 1.5rem;
         }
@@ -262,7 +281,7 @@ footer {
     }
 
     .sectionTitle {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .gridContainer {
@@ -301,7 +320,7 @@ footer {
         .menuPicturesWrapper {
             width: 100%;
             grid-template-columns: auto auto auto auto;
-            gap:5px;
+            gap: 5px;
         }
 
         .menuCardWrapper {
@@ -316,13 +335,15 @@ footer {
         }
     }
 
-    #menuHandrollContainer2,#menuRicebowlContainer,#menuHotfoodContainer{
+    #menuHandrollContainer2,
+    #menuRicebowlContainer,
+    #menuHotfoodContainer {
         flex-direction: column-reverse;
     }
 
     .testimonials {
         .pictureContainer img {
-            height: 500px;
+            height: 550px;
             object-fit: cover;
         }
 
@@ -336,6 +357,7 @@ footer {
             p:first-child {
                 font-size: 1.2rem;
             }
+
             p:nth-child(2) {
                 font-size: 1rem;
                 line-height: 1.5rem;
@@ -344,19 +366,27 @@ footer {
             p:last-child {
                 font-size: 1rem;
                 line-height: 1.2rem;
-                &:before{
+
+                &:before {
                     height: 1rem;
                     width: 1rem;
                 }
             }
-            
+
         }
     }
 
-    .aboutUs{
-        .aboutUsImgCover{
-            font-size: 0.8rem;
-            line-height: 0.8rem;
+    .aboutUsInfoContainer {
+        li {
+            .aboutUsImgCover {
+                font-size: 1rem;
+                line-height: 1rem;
+            }
         }
+
+    }
+
+    .findUsInfoWrapper{
+        align-items: center;
     }
 }
