@@ -545,7 +545,6 @@ body {
   max-width: 1320px;
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .gotoTopBtn {
@@ -651,6 +650,8 @@ footer {
     justify-content: center;
   }
   .menuIntroContainer li .menuIntroImgCover .whiteFrame {
+    width: 70px;
+    height: 70px;
     top: 0;
     left: 0;
     translate: 0 0;
