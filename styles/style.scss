@@ -130,7 +130,7 @@ footer {
                 @include flex-r-c-sb;
 
                 .whiteFrame {
-                    translate: 0 0;//for mobile end
+                    //translate: 0 0;//for mobile end
                     border-radius: 10px;
                     opacity: 1;
                     border: 2px solid $bg-color-light;
