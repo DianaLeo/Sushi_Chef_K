@@ -29,6 +29,7 @@
         @include flex-r-c-sb();
 
         img {
+            object-fit: cover;
             border-radius: 3px;
         }
 

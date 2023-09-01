@@ -87,10 +87,13 @@ ul {
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
+  transform: translateX(-400%);
+  transition: 0.7s;
 }
 
 .menuContainer .menuPicturesWrapper img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -105,11 +108,33 @@ ul {
   justify-content: center;
   width: 40%;
   position: relative;
+  transform: translateX(400%);
   transition: ease 0.7s;
 }
 
 .menuContainer .menuCardWrapper:hover {
-  transform: translateY(-50px);
+  transform: scale(1.05);
+}
+
+.menuContainer .show {
+  transform: translateX(0);
+}
+
+.menuContainer:nth-of-type(even) .menuPicturesWrapper {
+  transform: translateX(400%);
+  z-index: -1;
+}
+
+.menuContainer:nth-of-type(even) .menuCardWrapper {
+  transform: translateX(-400%);
+}
+
+.menuContainer:nth-of-type(even) .show {
+  transform: translateX(0);
+}
+
+.menuContainer:nth-of-type(even) .menuCard {
+  left: 20px;
 }
 
 .menuCard {

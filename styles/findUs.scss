@@ -26,7 +26,7 @@
             width: 100px;
         }
 
-        div {
+        >div {
             margin-right: 50px;
             margin-top: 50px;
         }
@@ -45,6 +45,17 @@
         a,
         span {
             line-height: 2rem;
+        }
+
+        #findUsLocationWrapper{
+            @include flex-r-c-sb;
+            flex-wrap: wrap;
+            div:first-child{
+                margin-right: 50px;
+            }
+        }
+        iframe {
+            margin-top: 10px;
         }
     }
 }

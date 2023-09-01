@@ -29,7 +29,7 @@ ul {
   width: 100px;
 }
 
-.findUs .findUsInfoWrapper div {
+.findUs .findUsInfoWrapper > div {
   margin-right: 50px;
   margin-top: 50px;
 }
@@ -44,4 +44,19 @@ ul {
 .findUs .findUsInfoWrapper a,
 .findUs .findUsInfoWrapper span {
   line-height: 2rem;
+}
+
+.findUs .findUsInfoWrapper #findUsLocationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.findUs .findUsInfoWrapper #findUsLocationWrapper div:first-child {
+  margin-right: 50px;
+}
+
+.findUs .findUsInfoWrapper iframe {
+  margin-top: 10px;
 }

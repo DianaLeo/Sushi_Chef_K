@@ -127,7 +127,7 @@ footer {
             .menuIntroImgCover {
                 border: 1px solid $bg-color-light;
                 height: 100%;
-                @include flex-r-c-sb;
+                //@include flex-r-c-sb;
 
                 .whiteFrame {
                     //translate: 0 0;//for mobile end
@@ -193,9 +193,14 @@ footer {
         flex-direction: column;
         align-items: center;
 
-        div {
+        >div {
             margin-right: 0;
             text-align: center;
+        }
+        #findUsLocationWrapper{
+            div:first-child{
+                margin-right: 0;
+            }
         }
     }
 }
@@ -206,7 +211,7 @@ footer {
         height: 3rem;
         position: fixed;
         top: 0;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
 
         li:first-child span:last-child,
@@ -233,6 +238,7 @@ footer {
             top: 0;
             left: 0;
             @include w-h-bgcolor(3rem, 3rem, $bg-color-light);
+            color: $bg-color-dark;
             outline: none;
             border: none;
             cursor: pointer;

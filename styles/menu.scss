@@ -104,9 +104,12 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
+        transform: translateX(-400%);
+        transition: 0.7s;
 
         img {
             width: 100%;
+            height:100%;
             border-radius: 10px;
             transition: 0.3s;
         }
@@ -120,11 +123,33 @@
         @include flex-r-c-sb();
         width: 40%;
         position: relative;
+        transform: translateX(400%);
         transition: ease 0.7s;
     }
 
     .menuCardWrapper:hover {
-        transform: translateY(-50px);
+        transform: scale(1.05);
+    }
+
+    .show{
+        transform: translateX(0);
+    }
+}
+
+.menuContainer:nth-of-type(even){
+    .menuPicturesWrapper{
+        transform: translateX(400%);
+        z-index: -1;
+    }
+    .menuCardWrapper{
+        transform: translateX(-400%);
+    }
+    .show{
+        transform: translateX(0);
+    }
+
+    .menuCard{
+        left: 20px;
     }
 }
 
@@ -163,3 +188,4 @@
         }
     }
 }
+
