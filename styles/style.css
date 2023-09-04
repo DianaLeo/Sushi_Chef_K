@@ -1013,6 +1013,9 @@ footer {
     grid-template-columns: auto auto auto auto;
     gap: 5px;
   }
+  .menuContainer .menuPicturesWrapper img {
+    height: 100px;
+  }
   .menuContainer .menuCardWrapper {
     width: 100%;
   }
