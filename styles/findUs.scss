@@ -2,7 +2,7 @@
 
 
 .findUs {
-    h1 {
+    h2 {
         margin-bottom: $section-title-margin-small;
     }
 
@@ -13,7 +13,7 @@
         @include flex-r-c-sb(flex-start, center);
         flex-wrap: wrap;
 
-        h1 {
+        #shopName {
             font-size: 2rem;
             margin-bottom: 0;
         }
@@ -49,7 +49,7 @@
 
         #findUsLocationWrapper{
             @include flex-r-c-sb;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             div:first-child{
                 margin-right: 50px;
             }

@@ -98,6 +98,7 @@
     margin: $section-title-margin-large + $section-title-margin-small 0;
     padding: 0 $section-title-margin-large;
     @include flex-r-c-sb();
+    overflow:hidden;
 
     .menuPicturesWrapper {
         width: 45%;

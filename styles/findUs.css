@@ -2,7 +2,7 @@ ul {
   list-style: none;
 }
 
-.findUs h1 {
+.findUs h2 {
   margin-bottom: 40px;
 }
 
@@ -16,7 +16,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.findUs .findUsInfoWrapper h1 {
+.findUs .findUsInfoWrapper #shopName {
   font-size: 2rem;
   margin-bottom: 0;
 }
@@ -50,7 +50,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .findUs .findUsInfoWrapper #findUsLocationWrapper div:first-child {

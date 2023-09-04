@@ -265,6 +265,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .menuContainer .menuPicturesWrapper {
@@ -657,7 +658,7 @@ ul {
   list-style: none;
 }
 
-.findUs h1 {
+.findUs h2 {
   margin-bottom: 40px;
 }
 
@@ -671,7 +672,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.findUs .findUsInfoWrapper h1 {
+.findUs .findUsInfoWrapper #shopName {
   font-size: 2rem;
   margin-bottom: 0;
 }
@@ -705,7 +706,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .findUs .findUsInfoWrapper #findUsLocationWrapper div:first-child {
@@ -885,6 +885,9 @@ footer {
     margin-right: 0;
     text-align: center;
   }
+  .findUs .findUsInfoWrapper #findUsLocationWrapper {
+    flex-direction: column;
+  }
   .findUs .findUsInfoWrapper #findUsLocationWrapper div:first-child {
     margin-right: 0;
   }
@@ -995,6 +998,10 @@ footer {
   .home .textContainer p:first-child.horizontalMove {
     left: -100vw;
   }
+  .menuIntroContainer li .menuIntroImgCover span:first-child {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
   .menuContainer {
     padding: 0 20px;
     flex-direction: column;
@@ -1011,6 +1018,9 @@ footer {
     margin: 0 20px;
     padding: 20px;
     top: -10px;
+    left: 0;
+  }
+  .menuContainer:nth-of-type(even) .menuCard {
     left: 0;
   }
   #menuHandrollContainerBrownRice,
@@ -1048,7 +1058,7 @@ footer {
     padding: 0 20px 70px;
     align-items: center;
   }
-  .findUs .findUsInfoWrapper h1 {
+  .findUs .findUsInfoWrapper #shopName {
     font-size: 1.8rem;
     margin-bottom: 10px;
   }
