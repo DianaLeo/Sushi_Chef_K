@@ -2,44 +2,70 @@ ul {
   list-style: none;
 }
 
-.aboutUs {
-  padding: 0 20px;
-}
-
-.aboutUs h3 {
+.aboutUsInfoContainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
   text-align: center;
-  margin: 40px 0;
 }
 
-.aboutUs p,
-.aboutUs span {
+.aboutUsInfoContainer h3, .aboutUsInfoContainer #introduction {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.aboutUsInfoContainer span {
   display: block;
-  text-align: center;
 }
 
-.aboutUs p {
+.aboutUsInfoContainer #bossSignature {
   font-family: 'Dancing Script', sans-serif;
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
-.aboutUsInfoContainer {
+.aboutUsInfoContainer .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutUsInfoContainer .tags p {
+  background-color: lightcoral;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 100px;
+  color: #fafafa;
+  line-height: 40px;
+}
+
+.aboutUsInfoContainer .tags p:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutUsImageContainer {
+  padding: 0 20px;
   gap: 20px;
 }
 
-.aboutUsInfoContainer li {
+.aboutUsImageContainer li {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.aboutUsInfoContainer li img {
+.aboutUsImageContainer li img {
   object-fit: cover;
   border-radius: 3px;
 }
 
-.aboutUsInfoContainer li .aboutUsImgCover {
+.aboutUsImageContainer li .aboutUsImgCover {
   position: absolute;
   top: 0;
   left: 0;

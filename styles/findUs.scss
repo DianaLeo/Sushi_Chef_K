@@ -57,5 +57,10 @@
         iframe {
             margin-top: 10px;
         }
+        .openingHours{
+            li{
+                @include flex-r-c-sb($j-c:space-between);
+            }
+        }
     }
 }

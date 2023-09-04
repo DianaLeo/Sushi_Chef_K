@@ -8,6 +8,7 @@ ul {
 
 .brand {
   padding-top: 30px;
+  position: relative;
   background-color: #1c1d1e;
   height: 130px;
   width: 100%;
@@ -26,6 +27,13 @@ ul {
 
 .home {
   position: relative;
+}
+
+.home h1, .home > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
 }
 
 .home .textContainer {
@@ -324,7 +332,7 @@ ul {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.menuCard h1 {
+.menuCard h3 {
   margin-top: 0;
   height: 3rem;
   font-size: 2rem;
@@ -332,7 +340,7 @@ ul {
   text-align: center;
 }
 
-.menuCard h3 {
+.menuCard h4 {
   text-align: center;
 }
 
@@ -565,44 +573,70 @@ ul {
   list-style: none;
 }
 
-.aboutUs {
-  padding: 0 20px;
-}
-
-.aboutUs h3 {
+.aboutUsInfoContainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
   text-align: center;
-  margin: 40px 0;
 }
 
-.aboutUs p,
-.aboutUs span {
+.aboutUsInfoContainer h3, .aboutUsInfoContainer #introduction {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.aboutUsInfoContainer span {
   display: block;
-  text-align: center;
 }
 
-.aboutUs p {
+.aboutUsInfoContainer #bossSignature {
   font-family: 'Dancing Script', sans-serif;
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
-.aboutUsInfoContainer {
+.aboutUsInfoContainer .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutUsInfoContainer .tags p {
+  background-color: lightcoral;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 100px;
+  color: #fafafa;
+  line-height: 40px;
+}
+
+.aboutUsInfoContainer .tags p:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutUsImageContainer {
+  padding: 0 20px;
   gap: 20px;
 }
 
-.aboutUsInfoContainer li {
+.aboutUsImageContainer li {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.aboutUsInfoContainer li img {
+.aboutUsImageContainer li img {
   object-fit: cover;
   border-radius: 3px;
 }
 
-.aboutUsInfoContainer li .aboutUsImgCover {
+.aboutUsImageContainer li .aboutUsImgCover {
   position: absolute;
   top: 0;
   left: 0;
@@ -680,6 +714,12 @@ ul {
 
 .findUs .findUsInfoWrapper iframe {
   margin-top: 10px;
+}
+
+.findUs .findUsInfoWrapper .openingHours li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 * {
@@ -819,7 +859,7 @@ footer {
   .menuContainer {
     padding: 0;
   }
-  .menuContainer .menuCard h1 {
+  .menuContainer .menuCard h3 {
     font-size: 1.6rem;
   }
   .testimonials h1 {
@@ -830,8 +870,8 @@ footer {
     object-fit: cover;
     height: 550px;
   }
-  .aboutUs h3 {
-    padding: 0 30px;
+  .aboutUsInfoContainer {
+    width: 80%;
   }
   .aboutUsImgCover {
     font-size: 1.2rem;
@@ -950,7 +990,7 @@ footer {
     width: 18%;
   }
   .home img {
-    content: url("../assets/images/home_page_600px.png");
+    content: url("../assets/images/home_page_mobile.webp");
   }
   .home .textContainer p:first-child.horizontalMove {
     left: -100vw;
@@ -973,7 +1013,7 @@ footer {
     top: -10px;
     left: 0;
   }
-  #menuHandrollContainer2,
+  #menuHandrollContainerBrownRice,
   #menuRicebowlContainer,
   #menuHotfoodContainer {
     flex-direction: column-reverse;
@@ -996,7 +1036,11 @@ footer {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  .aboutUsInfoContainer li .aboutUsImgCover {
+  .aboutUsInfoContainer #introduction {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  .aboutUsImageContainer li .aboutUsImgCover {
     font-size: 1rem;
     line-height: 1.5rem;
   }

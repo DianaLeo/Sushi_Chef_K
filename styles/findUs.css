@@ -60,3 +60,9 @@ ul {
 .findUs .findUsInfoWrapper iframe {
   margin-top: 10px;
 }
+
+.findUs .findUsInfoWrapper .openingHours li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

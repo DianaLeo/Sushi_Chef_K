@@ -1,27 +1,49 @@
 @import 'common';
 
-.aboutUs {
-    padding: 0 20px;
+.aboutUsInfoContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding:$section-title-margin-small 0;
+    text-align: center;
 
-    h3 {
-        text-align: center;
-        margin: $section-title-margin-small 0;
+    h3,#introduction {
+        width: 100%;
+        margin-bottom: $section-title-margin-small;
+        font-size: 1.17rem;
+        font-weight: bold;
     }
 
-    p,
     span {
         display: block;
-        text-align: center;
     }
 
-    p {
+    #bossSignature {
         font-family: 'Dancing Script', sans-serif;
         font-size: 2rem;
         margin-bottom: $section-title-margin-small;
     }
+
+    .tags {
+        width: 100%;
+        @include flex-r-c-sb;
+        flex-wrap: wrap;
+        p{
+            background-color: lightcoral;
+            height:40px;
+            padding: 0 10px;
+            border-radius: 100px;
+            color: $bg-color-light;
+            line-height: 40px;
+        }
+        p:not(:last-child){
+            margin-right:20px;
+            margin-bottom:10px;
+        }
+    }
 }
 
-.aboutUsInfoContainer {
+.aboutUsImageContainer {
+    padding: 0 20px;
     gap: 20px;
 
     li {

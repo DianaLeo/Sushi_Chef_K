@@ -4,6 +4,7 @@ ul {
 
 .brand {
   padding-top: 30px;
+  position: relative;
   background-color: #1c1d1e;
   height: 130px;
   width: 100%;
@@ -22,6 +23,13 @@ ul {
 
 .home {
   position: relative;
+}
+
+.home h1, .home > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
 }
 
 .home .textContainer {

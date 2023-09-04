@@ -142,11 +142,12 @@ footer {
                     //left:0;//For PC, don't have to change it back to 0, but for mobile, it is nessesary
                     transform: translateX(0);
                 }
+
                 span:first-child {
                     font-size: 1.5rem;
                     line-height: 1.5rem;
                 }
-    
+
                 span:last-child {
                     font-size: 1rem;
                     line-height: 1rem;
@@ -159,7 +160,7 @@ footer {
         padding: 0;
 
         .menuCard {
-            h1 {
+            h3 {
                 font-size: 1.6rem;
             }
         }
@@ -177,11 +178,8 @@ footer {
         }
     }
 
-    .aboutUs {
-        h3 {
-            padding: 0 30px;
-        }
-
+    .aboutUsInfoContainer {
+        width: 80%;
     }
 
     .aboutUsImgCover {
@@ -197,8 +195,9 @@ footer {
             margin-right: 0;
             text-align: center;
         }
-        #findUsLocationWrapper{
-            div:first-child{
+
+        #findUsLocationWrapper {
+            div:first-child {
                 margin-right: 0;
             }
         }
@@ -319,7 +318,7 @@ footer {
     .home {
 
         img {
-            content: url('../assets/images/home_page_600px.png');
+            content: url('../assets/images/home_page_mobile.webp');
         }
 
         .textContainer {
@@ -351,7 +350,7 @@ footer {
         }
     }
 
-    #menuHandrollContainer2,
+    #menuHandrollContainerBrownRice,
     #menuRicebowlContainer,
     #menuHotfoodContainer {
         flex-direction: column-reverse;
@@ -384,6 +383,12 @@ footer {
     }
 
     .aboutUsInfoContainer {
+        #introduction{
+            font-weight: 100;
+            font-size: 1rem;
+        }
+    }
+    .aboutUsImageContainer {
         li {
             .aboutUsImgCover {
                 font-size: 1rem;
@@ -397,10 +402,12 @@ footer {
         .findUsInfoWrapper {
             padding: 0 20px $section-title-margin-large;
             align-items: center;
-            h1{
+
+            h1 {
                 font-size: 1.8rem;
                 margin-bottom: 10px;
             }
+
             h3 {
                 font-size: 1rem;
                 line-height: 1.4rem;

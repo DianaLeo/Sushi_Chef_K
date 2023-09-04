@@ -147,7 +147,7 @@ ul {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.menuCard h1 {
+.menuCard h3 {
   margin-top: 0;
   height: 3rem;
   font-size: 2rem;
@@ -155,7 +155,7 @@ ul {
   text-align: center;
 }
 
-.menuCard h3 {
+.menuCard h4 {
   text-align: center;
 }
 

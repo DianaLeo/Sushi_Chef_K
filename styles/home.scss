@@ -3,6 +3,7 @@
 
 .brand {
     padding-top: 30px;
+    position: relative;
     @include w-h-bgcolor($h: 130px, $bgColor: $bg-color-dark);
     @include flex-r-c-sb();
 
@@ -17,6 +18,13 @@
 
 .home {
     position: relative;
+  
+    h1,>p{
+        position: absolute;
+        top: 0;
+        left:0;
+        background-color:transparent;
+    }
 
     .textContainer {
         color: rgba(255, 255, 255, 0.1);
