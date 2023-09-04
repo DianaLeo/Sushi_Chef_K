@@ -282,6 +282,7 @@ ul {
   height: 100%;
   border-radius: 10px;
   transition: 0.3s;
+  object-fit: cover;
 }
 
 .menuContainer .menuPicturesWrapper img:hover {
@@ -507,6 +508,7 @@ ul {
 }
 
 .testimonials .feedbackContainer #feedbackForm #submit {
+  color: #1c1d1e;
   font-size: 1rem;
   font-weight: bold;
   border: none;
