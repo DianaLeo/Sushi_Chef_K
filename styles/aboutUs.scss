@@ -30,14 +30,13 @@
         p{
             background-color: lightcoral;
             height:40px;
-            padding: 0 10px;
+            padding: 0 15px;
             border-radius: 100px;
             color: $bg-color-light;
+            font-weight: bold;
             line-height: 40px;
-        }
-        p:not(:last-child){
-            margin-right:20px;
             margin-bottom:10px;
+            margin-right: 10px;
         }
     }
 }
