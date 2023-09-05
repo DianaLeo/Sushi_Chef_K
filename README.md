@@ -16,7 +16,7 @@ During this project, my knowledge of HTML, CSS, and JS was consolidated. And I a
 
 ### For PCs
 
-![displaying_page](./assets/images/screenshot_PC1.png)![displaying_page](./assets/images/screenshot_PC2.png)
+![displaying_page](./assets/images/screenshot_PC1.png)![displaying_page](./assets/images/screenshot_PC2.png)![displaying_page](./assets/images/screenshot_PC3.png)
 
 
 ### For Pads
@@ -26,4 +26,4 @@ During this project, my knowledge of HTML, CSS, and JS was consolidated. And I a
 
 ### For Mobiles
 
-![displaying_page](./assets/images/screenshot_iphone14.jpg)
+![displaying_page](./assets/images/screenshot_iphone11.jpg)
