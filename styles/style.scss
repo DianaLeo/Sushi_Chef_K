@@ -342,6 +342,9 @@ footer {
         padding: 0 20px;
         flex-direction: column;
 
+        &:before{
+            opacity: 0.2;
+        }
         .menuPicturesWrapper {
             width: 100%;
             grid-template-columns: auto auto auto auto;

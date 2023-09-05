@@ -285,7 +285,7 @@ ul {
   top: 0;
   left: 0;
   z-index: -2;
-  opacity: 0.1;
+  opacity: 0.15;
 }
 
 .menuContainer:after {
@@ -667,7 +667,7 @@ ul {
 
 .aboutUsImageContainer li img {
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .aboutUsImageContainer li .aboutUsImgCover {
@@ -684,7 +684,14 @@ ul {
   text-align: center;
   line-height: 3rem;
   padding: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
+}
+
+.aboutUsImageContainer li .aboutUsImgCover p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 ul {
@@ -747,6 +754,7 @@ ul {
 
 .findUs .findUsInfoWrapper iframe {
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .findUs .findUsInfoWrapper .openingHours li {
@@ -1038,6 +1046,9 @@ footer {
   .menuContainer {
     padding: 0 20px;
     flex-direction: column;
+  }
+  .menuContainer:before {
+    opacity: 0.2;
   }
   .menuContainer .menuPicturesWrapper {
     width: 100%;

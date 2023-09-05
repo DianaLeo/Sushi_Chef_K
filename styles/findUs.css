@@ -58,6 +58,7 @@ ul {
 
 .findUs .findUsInfoWrapper iframe {
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .findUs .findUsInfoWrapper .openingHours li {
