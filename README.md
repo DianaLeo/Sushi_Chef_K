@@ -15,17 +15,17 @@ Through this project, my knowledge of HTML, CSS, SASS, and JS was consolidated. 
 
  - Currently, it contains static pages. No database involved. In the future, reservation and order system will be added hopefully.
 
-
+.
 ## For PCs
 
 ![displaying_page](./assets/images/screenshots/screenshot_PC1.png) ![displaying_page](./assets/images/screenshots/screenshot_PC2.png) ![displaying_page](./assets/images/screenshots/screenshot_PC3.png)
 
-
+.
 ## For Pads
 
 ![displaying_page](./assets/images/screenshots/screenshot_ipad1.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad2.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad3.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad4.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad5.png)
 
-
+.
 ## For Mobiles
 
-![displaying_page](./assets/images/screenshots/screenshot_iphone1.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone2.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone3.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone4.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone5.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone6.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone7.png)
+![displaying_page](./assets/images/screenshots/screenshot_iphone1.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone2.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone3.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone4.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone5.png) ![displaying_page](./assets/images/screenshots/screenshot_iphone6.png)
