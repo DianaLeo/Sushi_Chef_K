@@ -9,6 +9,8 @@ Through this project, my knowledge of HTML, CSS, SASS, and JS was consolidated. 
 
  - **The responsive design has been made for PC, ipad, and mobile phones.**
 
+ - PC end has some beautiful user interactions
+
  - Tech stack: HTML, SASS, and Javascript
 
  - Currently, it contains static pages. No database involved. In the future, reservation and order system will be added hopefully.
@@ -21,7 +23,7 @@ Through this project, my knowledge of HTML, CSS, SASS, and JS was consolidated. 
 
 ## For Pads
 
-![displaying_page](./assets/images/screenshots/screenshot_ipad1.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad2.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad3.png)![displaying_page](./assets/images/screenshots/screenshot_ipad4.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad5.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad6.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad7.png)
+![displaying_page](./assets/images/screenshots/screenshot_ipad1.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad2.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad3.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad4.png) ![displaying_page](./assets/images/screenshots/screenshot_ipad5.png)
 
 
 ## For Mobiles
